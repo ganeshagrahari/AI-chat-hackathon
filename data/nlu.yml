@@ -1,0 +1,211 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - namaste
+    - hii
+    - hola
+    - Jai Hind
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - thanks for help
+    - that's all I needed
+    - talk to you later
+    - dhanyawad
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    - okay
+    - haan
+    - ji haan
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nahi
+    - ji nahi
+
+- intent: ask_scheme_list
+  examples: |
+    - What government schemes are available?
+    - Show me all schemes
+    - List available scholarships
+    - What programs can I apply for?
+    - Tell me about government schemes
+    - What scholarships are currently open?
+    - What financial aid programs are there?
+    - Show me all the schemes in [Uttar Pradesh](state)
+    - What schemes can I apply for?
+    - What are the current schemes?
+    - Which schemes are accepting applications?
+
+- intent: ask_scheme_type
+  examples: |
+    - Show me [scholarship](scheme_type) schemes
+    - What [financial aid](scheme_type) programs are available?
+    - Are there any [coaching](scheme_type) schemes?
+    - Tell me about [subsidy](scheme_type) programs
+    - I'm looking for [pension](scheme_type) schemes
+    - Do you have any [employment](scheme_type) schemes?
+    - What [healthcare](scheme_type) programs are there?
+    - Show me [skill development](scheme_type) initiatives
+    - Any [scholarship](scheme_type) for students?
+    - What [financial aid](scheme_type) can I get?
+
+- intent: ask_scheme_details
+  examples: |
+    - Tell me about [UP Post-Matric Scholarship](scheme)
+    - What is [Kanya Vidya Dhan Yojana](scheme)?
+    - Give me details of [Dr. Ambedkar Scholarship](scheme)
+    - Explain [Mukhyamantri Abhyudaya Yojana](scheme)
+    - I want to know about [UP Scholarship for Minorities](scheme)
+    - Details for [Shadi Anudan Yojana](scheme)
+    - What does [MNREGA Scheme](scheme) offer?
+    - Explain the benefits of [Ayushman Bharat Yojana](scheme)
+    - Tell me more about [Balika Anudan Yojana](scheme)
+    - I heard about [Kisan Samman Nidhi Yojana](scheme), what is it?
+
+- intent: ask_eligibility
+  examples: |
+    - Who is eligible for [UP Post-Matric Scholarship](scheme)?
+    - Am I eligible for [Kanya Vidya Dhan Yojana](scheme)?
+    - What are the eligibility criteria for [MNREGA Scheme](scheme)?
+    - Can [SC](eligibility_category) students apply for scholarships?
+    - Are there schemes for [OBC](eligibility_category) students?
+    - What schemes are available for [female](eligibility_category) students?
+    - Am I eligible for any schemes as a [minority](eligibility_category) student?
+    - What schemes can [BPL](eligibility_category) families avail?
+    - Are there schemes for [farmers](eligibility_category)?
+    - Can [persons with disabilities](eligibility_category) get any benefits?
+    - Is there any scheme for [unemployed](eligibility_category) people?
+
+- intent: ask_documents
+  examples: |
+    - What documents are needed for [UP Post-Matric Scholarship](scheme)?
+    - Documents required for [Mukhyamantri Abhyudaya Yojana](scheme)
+    - Do I need [Aadhar](document_type) for scholarships?
+    - Is [income certificate](document_type) required?
+    - What papers should I submit for [Ayushman Bharat Yojana](scheme)?
+    - Do I need to provide [caste certificate](document_type)?
+    - What documents are required for [Divyang Pension Yojana](scheme)?
+    - Documents needed for [UP Ration Card Scheme](scheme)
+    - Will I need [domicile](document_type) proof?
+    - Is [bank account](document_type) mandatory?
+
+- intent: ask_application_process
+  examples: |
+    - How do I apply for [UP Post-Matric Scholarship](scheme)?
+    - What is the application process for [Kanya Vidya Dhan Yojana](scheme)?
+    - Steps to apply for [Dr. Ambedkar Scholarship](scheme)
+    - How can I register for [MNREGA Scheme](scheme)?
+    - Tell me how to apply for [Ayushman Bharat Yojana](scheme)
+    - Application procedure for [UP Scholarship for Minorities](scheme)
+    - How to fill form for [Shadi Anudan Yojana](scheme)
+    - What's the process to get [Vishwakarma Shram Samman Yojana](scheme)?
+    - How to submit application for scholarship?
+    - Where should I apply?
+
+- intent: ask_deadline
+  examples: |
+    - When is the last date for [UP Post-Matric Scholarship](scheme)?
+    - What is the deadline for [Kanya Vidya Dhan Yojana](scheme)?
+    - Until when can I apply for [Dr. Ambedkar Scholarship](scheme)?
+    - Last date of [Mukhyamantri Abhyudaya Yojana](scheme)?
+    - Deadline for [UP Scholarship for Minorities](scheme)
+    - When does [Shadi Anudan Yojana](scheme) application close?
+    - What is the closing date for applications?
+    - How much time do I have to apply?
+    - Are applications still open?
+    - Have I missed the deadline?
+
+- intent: ask_income_limit
+  examples: |
+    - What is the income limit for [UP Post-Matric Scholarship](scheme)?
+    - Maximum family income for [Kanya Vidya Dhan Yojana](scheme)?
+    - Income criteria for [Dr. Ambedkar Scholarship](scheme)
+    - What's the income cap for [MNREGA Scheme](scheme)?
+    - Income eligibility for [Ayushman Bharat Yojana](scheme)
+    - How much should my family earn to be eligible?
+    - Is there an income limit?
+    - What if my income is more than the limit?
+    - Do all schemes have income restrictions?
+    - Income threshold for scholarships?
+
+- intent: set_reminder
+  examples: |
+    - Remind me before the deadline for [UP Post-Matric Scholarship](scheme)
+    - Set a reminder for [Kanya Vidya Dhan Yojana](scheme) deadline
+    - Alert me when [Dr. Ambedkar Scholarship](scheme) is about to close
+    - I want a reminder for [MNREGA Scheme](scheme) deadline
+    - Notify me before [Ayushman Bharat Yojana](scheme) closes
+    - Can you remind me to apply?
+    - Please send me alerts for deadlines
+    - I don't want to miss the deadline
+    - Set notifications for upcoming deadlines
+    - Remind me about application dates
+
+- intent: ask_application_link
+  examples: |
+    - Where can I apply for [UP Post-Matric Scholarship](scheme)?
+    - Give me the link for [Kanya Vidya Dhan Yojana](scheme)
+    - Application website for [Dr. Ambedkar Scholarship](scheme)
+    - What's the URL to apply for [MNREGA Scheme](scheme)?
+    - Share the application link for [Ayushman Bharat Yojana](scheme)
+    - Website for [UP Scholarship for Minorities](scheme)
+    - Where is the online form for scholarships?
+    - Is there a portal for applications?
+    - Official website for applying
+    - Application form link please
+
+- intent: provide_profile_info
+  examples: |
+    - I am a [SC](eligibility_category) student
+    - I belong to [OBC](eligibility_category) category
+    - I'm from [BPL](eligibility_category) family
+    - My annual family income is [1.5 lakh](income)
+    - I am a [female](eligibility_category) student
+    - I'm a [farmer](eligibility_category)
+    - I'm [unemployed](eligibility_category)
+    - I have a [disability](eligibility_category)
+    - I'm from [Uttar Pradesh](state)
+    - I'm a [minority](eligibility_category) student
+    - We earn about [2 lakh](income) per year
+    - I'm preparing for competitive exams
+    - I need financial assistance for education
+    - I'm looking for support for my daughter's education
+    - I'm a senior citizen looking for benefits
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what are you?

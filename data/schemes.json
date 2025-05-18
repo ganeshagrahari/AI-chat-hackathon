@@ -1,0 +1,222 @@
+[
+  {
+    "name": "UP Post-Matric Scholarship",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "SC/ST/OBC students",
+    "income_limit": "2,00,000",
+    "documents_required": "Aadhar, Income Certificate, Caste Certificate, Bank Passbook",
+    "application_link": "https://upscholarship.gov.in/scheme/1",
+    "start_date": "11-01-2025",
+    "end_date": "22-02-2025"
+  },
+  {
+    "name": "UP Pre-Matric Scholarship",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "General students below poverty line",
+    "income_limit": "2,50,000",
+    "documents_required": "Aadhar, School ID, Income Certificate",
+    "application_link": "https://upscholarship.gov.in/scheme/2",
+    "start_date": "20-01-2025",
+    "end_date": "25-02-2025"
+  },
+  {
+    "name": "Kanya Vidya Dhan Yojana",
+    "type ": "Financial Aid",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Female students",
+    "income_limit": "1,50,000",
+    "documents_required": "Aadhar, Income Certificate, 10th Marksheet",
+    "application_link": "https://upscholarship.gov.in/scheme/3",
+    "start_date": "01-02-2025",
+    "end_date": "15-03-2025"
+  },
+  {
+    "name": "Mukhyamantri Abhyudaya Yojana",
+    "type ": "Coaching",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "UP Residents",
+    "income_limit": "3,00,000",
+    "documents_required": "Aadhar, Domicile, Photo",
+    "application_link": "https://upscholarship.gov.in/scheme/4",
+    "start_date": "05-03-2025",
+    "end_date": "11-04-2025"
+  },
+  {
+    "name": "Dr. Ambedkar Scholarship",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "SC students",
+    "income_limit": "2,00,000",
+    "documents_required": "Caste Certificate, Bank Passbook",
+    "application_link": "https://upscholarship.gov.in/scheme/5",
+    "start_date": "09-03-2025",
+    "end_date": "01-04-2025"
+  },
+  {
+    "name": "UP Scholarship for Minorities",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Minority communities",
+    "income_limit": "2,00,000",
+    "documents_required": "Minority Certificate, Income Proof",
+    "application_link": "https://upscholarship.gov.in/scheme/6",
+    "start_date": "29-03-2025",
+    "end_date": "29-04-2025"
+  },
+  {
+    "name": "Samaj Kalyan Vibhag Scholarship",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Economically weaker section",
+    "income_limit": "2,00,000",
+    "documents_required": "Aadhar, Domicile",
+    "application_link": "https://upscholarship.gov.in/scheme/7",
+    "start_date": "05-04-2025",
+    "end_date": "19-05-2025"
+  },
+  {
+    "name": "Shadi Anudan Yojana",
+    "type ": "Financial Aid",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "BPL families",
+    "income_limit": "1,50,000",
+    "documents_required": "Marriage Proof, BPL Card",
+    "application_link": "https://upscholarship.gov.in/scheme/8",
+    "start_date": "09-04-2025",
+    "end_date": "14-05-2025"
+  },
+  {
+    "name": "Vishwakarma Shram Samman Yojana",
+    "type ": "Skill Development",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Artisans",
+    "income_limit": "3,00,000",
+    "documents_required": "Aadhar, Artisan Card",
+    "application_link": "https://upscholarship.gov.in/scheme/9",
+    "start_date": "15-04-2025",
+    "end_date": "11-06-2025"
+  },
+  {
+    "name": "MNREGA Scheme",
+    "type ": "Employment",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Unemployed citizens",
+    "income_limit": "2,00,000",
+    "documents_required": "Job Card, Aadhar",
+    "application_link": "https://upscholarship.gov.in/scheme/10",
+    "start_date": "20-05-2025",
+    "end_date": "22-06-2025"
+  },
+  {
+    "name": "UP Ration Card Scheme",
+    "type ": "Subsidy",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "BPL citizens",
+    "income_limit": "1,00,000",
+    "documents_required": "Ration Card",
+    "application_link": "https://upscholarship.gov.in/scheme/11",
+    "start_date": "17-04-2025",
+    "end_date": "29-06-2025"
+  },
+  {
+    "name": "Kisan Samman Nidhi Yojana",
+    "type ": "Subsidy",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Small/marginal farmers",
+    "income_limit": "2,00,000",
+    "documents_required": "Land documents, Aadhar",
+    "application_link": "https://upscholarship.gov.in/scheme/12",
+    "start_date": "14-05-2025",
+    "end_date": "19-07-2025"
+  },
+  {
+    "name": "Ayushman Bharat Yojana",
+    "type ": "Healthcare",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "BPL families",
+    "income_limit": "2,00,000",
+    "documents_required": "Aadhar, Ration Card",
+    "application_link": "https://upscholarship.gov.in/scheme/13",
+    "start_date": "26-05-2025",
+    "end_date": "11-07-2025"
+  },
+  {
+    "name": "Balika Anudan Yojana",
+    "type ": "Financial Aid",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Girl child from BPL families",
+    "income_limit": "1,50,000",
+    "documents_required": "Birth Certificate, Income Proof",
+    "application_link": "https://upscholarship.gov.in/scheme/14",
+    "start_date": "18-06-2025",
+    "end_date": "17-08-2025"
+  },
+  {
+    "name": "Labour Card Scholarship",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Children of labourers",
+    "income_limit": "1,00,000",
+    "documents_required": "Labour ID, School ID",
+    "application_link": "https://upscholarship.gov.in/scheme/15",
+    "start_date": "19-06-2025",
+    "end_date": "29-07-2025"
+  },
+  {
+    "name": "UP Old Age Pension Scheme",
+    "type ": "Pension",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Senior citizens",
+    "income_limit": "1,00,000",
+    "documents_required": "Age Proof, Aadhar",
+    "application_link": "https://upscholarship.gov.in/scheme/16",
+    "start_date": "29-06-2025",
+    "end_date": "23-08-2025"
+  },
+  {
+    "name": "Divyang Pension Yojana",
+    "type ": "Pension",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Persons with disabilities",
+    "income_limit": "1,00,000",
+    "documents_required": "Disability Certificate",
+    "application_link": "https://upscholarship.gov.in/scheme/17",
+    "start_date": "01-06-2025",
+    "end_date": "05-08-2025"
+  },
+  {
+    "name": "Scholarship for SC/ST",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "SC/ST students",
+    "income_limit": "2,00,000",
+    "documents_required": "Caste Certificate, Income Proof",
+    "application_link": "https://upscholarship.gov.in/scheme/18",
+    "start_date": "17-07-2025",
+    "end_date": "14-09-2025"
+  },
+  {
+    "name": "Merit-cum-Means Scholarship",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Minority students",
+    "income_limit": "2,50,000",
+    "documents_required": "Income Certificate, Minority Certificate",
+    "application_link": "https://upscholarship.gov.in/scheme/19",
+    "start_date": "30-07-2025",
+    "end_date": "11-09-2025"
+  },
+  {
+    "name": "Nai Udaan Scheme",
+    "type ": "Scholarship",
+    "applicable_state": "Uttar Pradesh",
+    "eligible_for": "Graduates preparing for exams",
+    "income_limit": "3,00,000",
+    "documents_required": "Graduation Marksheet, Aadhar",
+    "application_link": "https://upscholarship.gov.in/scheme/20",
+    "start_date": "17-09-2025",
+    "end_date": "01-01-2026"
+  }
+]

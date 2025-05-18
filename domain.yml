@@ -1,0 +1,168 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_scheme_list
+  - ask_scheme_type
+  - ask_scheme_details
+  - ask_eligibility
+  - ask_documents
+  - ask_application_process
+  - ask_deadline
+  - ask_income_limit
+  - set_reminder
+  - ask_application_link
+  - provide_profile_info
+  - bot_challenge
+
+entities:
+  - scheme
+  - scheme_type
+  - eligibility_category
+  - document_type
+  - state
+  - income
+
+slots:
+  scheme:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: scheme
+  
+  scheme_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: scheme_type
+  
+  eligibility_category:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: eligibility_category
+  
+  document_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: document_type
+  
+  state:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: state
+  
+  income:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: income
+  
+  user_email:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: email_form
+        requested_slot: user_email
+
+  user_phone:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: phone_form
+        requested_slot: user_phone
+
+responses:
+  utter_greet:
+  - text: "Hello! I'm your Government Schemes Assistant. I can help you find information about scholarships, financial aid, and other government programs. How can I assist you today?"
+  
+  utter_goodbye:
+  - text: "Goodbye! Feel free to return if you have more questions about government schemes."
+
+  utter_scheme_list:
+  - text: "Here are some government schemes available in Uttar Pradesh:\n1. UP Post-Matric Scholarship\n2. UP Pre-Matric Scholarship\n3. Kanya Vidya Dhan Yojana\n4. Mukhyamantri Abhyudaya Yojana\n5. Dr. Ambedkar Scholarship\n6. UP Scholarship for Minorities\n7. Samaj Kalyan Vibhag Scholarship\n8. Shadi Anudan Yojana\n9. Vishwakarma Shram Samman Yojana\n10. MNREGA Scheme\n\nWould you like details about any specific scheme?"
+
+  utter_scheme_type:
+  - text: "I found these {scheme_type} schemes for you. Would you like to know more about any of them?"
+
+  utter_scheme_details:
+  - text: "Here are the details for {scheme}:"
+
+  utter_eligibility:
+  - text: "The eligibility criteria for {scheme} are:"
+
+  utter_documents:
+  - text: "The documents required for {scheme} are:"
+
+  utter_application_process:
+  - text: "Here's how you can apply for {scheme}:"
+
+  utter_deadline:
+  - text: "The deadline for applying to {scheme} is:"
+
+  utter_income_limit:
+  - text: "The income limit for {scheme} is:"
+
+  utter_application_link:
+  - text: "You can apply for {scheme} at:"
+
+  utter_ask_email:
+  - text: "Please provide your email address to receive reminders about scheme deadlines."
+
+  utter_ask_phone:
+  - text: "Please provide your phone number to receive SMS reminders about scheme deadlines."
+
+  utter_reminder_set:
+  - text: "I've set a reminder for you about the {scheme} deadline. You'll receive a notification before the deadline."
+
+  utter_profile_confirmation:
+  - text: "Based on your profile information, I'll find the most suitable schemes for you."
+
+  utter_schemes_for_category:
+  - text: "Based on your {eligibility_category} category, here are some schemes you might be eligible for:"
+
+  utter_default:
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase or ask about specific government schemes?"
+
+  utter_iamabot:
+  - text: "I am a digital assistant designed to help you navigate government schemes and scholarships."
+
+actions:
+  - action_list_schemes
+  - action_scheme_details
+  - action_check_eligibility
+  - action_required_documents
+  - action_application_process
+  - action_check_deadline
+  - action_income_limit
+  - action_set_reminder
+  - action_application_link
+  - action_recommend_schemes
+
+forms:
+  email_form:
+    required_slots:
+      - user_email
+  
+  phone_form:
+    required_slots:
+      - user_phone
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

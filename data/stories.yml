@@ -1,0 +1,131 @@
+version: "3.1"
+
+stories:
+
+- story: greet and list schemes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_scheme_list
+  - action: action_list_schemes
+  - intent: ask_scheme_details
+  - slot_was_set:
+    - scheme: "UP Post-Matric Scholarship" 
+  - action: action_scheme_details
+
+- story: ask for scholarship schemes
+  steps:
+  - intent: ask_scheme_type
+  - slot_was_set:
+    - scheme_type: "Scholarship"
+  - action: action_list_schemes
+  - intent: ask_scheme_details
+  - slot_was_set:
+    - scheme: "UP Scholarship for Minorities"
+  - action: action_scheme_details
+
+- story: ask for financial aid schemes
+  steps:
+  - intent: ask_scheme_type
+  - slot_was_set:
+    - scheme_type: "Financial Aid"
+  - action: action_list_schemes
+  - intent: ask_eligibility
+  - slot_was_set:
+    - scheme: "Kanya Vidya Dhan Yojana"
+  - action: action_check_eligibility
+
+- story: ask for coaching schemes
+  steps:
+  - intent: ask_scheme_type
+  - slot_was_set:
+    - scheme_type: "Coaching"
+  - action: action_list_schemes
+  - intent: ask_application_process
+  - slot_was_set:
+    - scheme: "Mukhyamantri Abhyudaya Yojana"
+  - action: action_application_process
+
+- story: direct scheme eligibility inquiry
+  steps:
+  - intent: ask_eligibility
+  - slot_was_set:
+    - scheme: "Dr. Ambedkar Scholarship"
+  - action: action_check_eligibility
+  - intent: ask_documents
+  - action: action_required_documents
+
+- story: scheme documents inquiry
+  steps:
+  - intent: ask_documents
+  - slot_was_set:
+    - scheme: "UP Post-Matric Scholarship"
+  - action: action_required_documents
+  - intent: ask_deadline
+  - action: action_check_deadline
+
+- story: scheme application process
+  steps:
+  - intent: ask_application_process
+  - slot_was_set:
+    - scheme: "Shadi Anudan Yojana"
+  - action: action_application_process
+  - intent: ask_application_link
+  - action: action_application_link
+
+- story: check scheme deadline
+  steps:
+  - intent: ask_deadline
+  - slot_was_set:
+    - scheme: "UP Pre-Matric Scholarship"
+  - action: action_check_deadline
+  - intent: set_reminder
+  - action: action_set_reminder
+
+- story: direct income limit inquiry
+  steps:
+  - intent: ask_income_limit
+  - slot_was_set:
+    - scheme: "Vishwakarma Shram Samman Yojana"
+  - action: action_income_limit
+
+- story: provide profile for recommendations
+  steps:
+  - intent: provide_profile_info
+  - slot_was_set:
+    - eligibility_category: "SC"
+  - action: action_recommend_schemes
+  - intent: ask_scheme_details
+  - slot_was_set:
+    - scheme: "Dr. Ambedkar Scholarship"
+  - action: action_scheme_details
+
+- story: category-based recommendation
+  steps:
+  - intent: provide_profile_info
+  - slot_was_set:
+    - eligibility_category: "female"
+  - action: action_recommend_schemes
+  - intent: ask_eligibility
+  - slot_was_set:
+    - scheme: "Kanya Vidya Dhan Yojana"
+  - action: action_check_eligibility
+
+- story: application link and set reminder
+  steps:
+  - intent: ask_application_link
+  - slot_was_set:
+    - scheme: "UP Post-Matric Scholarship"
+  - action: action_application_link
+  - intent: set_reminder
+  - action: action_set_reminder
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

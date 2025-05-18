@@ -1,0 +1,73 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: General scheme list inquiry
+  steps:
+  - intent: ask_scheme_list
+  - action: action_list_schemes
+
+- rule: Scheme type inquiry
+  steps:
+  - intent: ask_scheme_type
+  - action: action_list_schemes
+
+- rule: Scheme details inquiry
+  steps:
+  - intent: ask_scheme_details
+  - action: action_scheme_details
+
+- rule: Eligibility inquiry
+  steps:
+  - intent: ask_eligibility
+  - action: action_check_eligibility
+
+- rule: Document inquiry
+  steps:
+  - intent: ask_documents
+  - action: action_required_documents
+
+- rule: Application process inquiry
+  steps:
+  - intent: ask_application_process
+  - action: action_application_process
+
+- rule: Deadline inquiry
+  steps:
+  - intent: ask_deadline
+  - action: action_check_deadline
+
+- rule: Income limit inquiry
+  steps:
+  - intent: ask_income_limit
+  - action: action_income_limit
+
+- rule: Set reminder request
+  steps:
+  - intent: set_reminder
+  - action: action_set_reminder
+
+- rule: Application link inquiry
+  steps:
+  - intent: ask_application_link
+  - action: action_application_link
+
+- rule: Profile information provided
+  steps:
+  - intent: provide_profile_info
+  - action: action_recommend_schemes
